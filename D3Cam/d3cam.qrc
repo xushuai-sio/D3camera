@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="/D3Cam">
+    <file>Win32/Debug/arrow_down.png</file>
+    <file>Win32/Debug/无标题2.png</file>
+    <file>Win32/Debug/无标题1.png</file>
+    <file>Win32/Debug/radiobutton-checked.png</file>
+    <file>Win32/Debug/radiobutton-unchecked-.png</file>
+    <file>Win32/Debug/delete.ico</file>
+    <file>Win32/Debug/download.ico</file>
+    <file>Win32/Debug/lens.ico</file>
+    <file>Win32/Debug/save.png</file>
+    <file>Win32/Debug/Screenshot.ico</file>
+    <file>Win32/Debug/setting .ico</file>
+    <file>Win32/Debug/shutdown.ico</file>
+    <file>Win32/Debug/splashlogo.png</file>
+    <file>Win32/Debug/start.ico</file>
+    <file>Win32/Debug/stop.ico</file>
+    <file>Win32/Debug/Upload.ico</file>
+    <file>Win32/Debug/help.ico</file>
+    <file>Win32/Debug/reset.ico</file>
+    <file>Win32/Debug/serialport1.ico</file>
+    <file>Win32/Debug/serialport2.net.ico</file>
+    <file>Win32/Debug/folder_open.ico</file>
+  </qresource>
+</RCC>

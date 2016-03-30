@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>D3CamClass</class>
+ <widget class="QDialog" name="D3CamClass">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>OIATech-D3Cam</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="d3cam.qrc">
+    <normaloff>:/D3Cam/Win32/Debug/lens.ico</normaloff>:/D3Cam/Win32/Debug/lens.ico</iconset>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	background-color: rgba(50, 90, 100, 100);
+    border-style:dash;
+    border-width:5px;
+    border-radius:9px;
+	border-color: rgba(255, 255, 255, 30);
+	font: 12pt;
+}
+QPushButton:hover{
+	background-color: rgba(50, 190, 255, 100);
+	color: rgba(0, 0, 0, 200);
+	border-color: rgba(255, 255, 255, 30);
+}
+QPushButton:pressed{
+	background-color: rgba(100, 255, 100, 200);
+	border-color: rgba(255, 255, 255, 0);
+    border-style:inset;
+	color: rgba(0, 0, 0,100);
+}
+QFrame{
+    
+    padding: 2px;
+	background-color: rgb(255, 255, 255);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 1 #FFFFFF, stop: 2 #FFFFFF);
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>571</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>视频区</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <widget class="QLabel" name="viewLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>551</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>320</y>
+     <width>181</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>消息区</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>161</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>422</x>
+     <y>0</y>
+     <width>341</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="midLineWidth">
+    <number>2</number>
+   </property>
+   <property name="text">
+    <string>D3相机上位机软件</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>97</y>
+     <width>181</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>118</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="startSysBtn">
+         <property name="text">
+          <string>连接相机</string>
+         </property>
+         <property name="icon">
+          <iconset resource="d3cam.qrc">
+           <normaloff>:/D3Cam/Win32/Debug/start.ico</normaloff>:/D3Cam/Win32/Debug/start.ico</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="stopSysBtn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>断开连接</string>
+         </property>
+         <property name="icon">
+          <iconset resource="d3cam.qrc">
+           <normaloff>:/D3Cam/Win32/Debug/stop.ico</normaloff>:/D3Cam/Win32/Debug/stop.ico</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btnSaveImg">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>截图</string>
+         </property>
+         <property name="icon">
+          <iconset resource="d3cam.qrc">
+           <normaloff>:/D3Cam/Win32/Debug/Screenshot.ico</normaloff>:/D3Cam/Win32/Debug/Screenshot.ico</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="settingBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>设置</string>
+         </property>
+         <property name="icon">
+          <iconset resource="d3cam.qrc">
+           <normaloff>:/D3Cam/Win32/Debug/setting .ico</normaloff>:/D3Cam/Win32/Debug/setting .ico</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="helpBtn">
+       <property name="text">
+        <string>帮助</string>
+       </property>
+       <property name="icon">
+        <iconset resource="d3cam.qrc">
+         <normaloff>:/D3Cam/Win32/Debug/help.ico</normaloff>:/D3Cam/Win32/Debug/help.ico</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>411</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/D3Cam/Win32/Debug/splashlogo.png);
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>groupBox_3</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="d3cam.qrc"/>
+  <include location="d3cam.qrc"/>
+ </resources>
+ <connections/>
+</ui>

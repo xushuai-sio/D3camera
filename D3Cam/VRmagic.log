@@ -1,0 +1,14 @@
+(VuLog::init logfile "VRmagic.log")
+<I/15:00:42/T4528> logfile date time: 2016-01-21, 15:00:42 (GMT+8)
+<I/15:00:42/T4528> *** VRmUsbCam C API logging enabled, v3304 (Win x86) built on Aug 14 2014 11:31:37
+<I/15:00:42/T4528> VhwPnpManager: create
+<I/15:00:42/T4528> VgrbDevicePnpConfig::load from "C:\Program Files\Common Files\VRmagic\vgrbdevice.ini"
+<I/15:00:42/T4528> loaded config: device support LOC USB ETH
+<I/15:00:42/T4528> VethPnpCamera: CHANGE_INIT
+<I/15:00:42/T4528> VethPnpCamera: binding to: 127.0.0.1 192.168.0.1 192.168.1.100 192.168.235.1
+<I/15:00:42/T4528> VusbPnpWin32::scan 0 device(s) found: 
+<I/15:00:42/T4528> VethPnpCamera::scan waiting 249ms for replies
+<I/15:00:43/T4528> VethPnpCamera::scan 0 device(s) found: 
+<I/15:01:26/T4528> ++ VRmUsbCamCleanup
+<I/15:01:26/T4528> VhwPnpManager: destroy
+<I/15:01:26/T4528> -- VRmUsbCamCleanup
